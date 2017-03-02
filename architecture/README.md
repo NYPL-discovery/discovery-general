@@ -11,7 +11,7 @@ You can view the current version/status here: https://nypl-discovery.github.io/d
 
 1. Open the latest [graffle](https://github.com/NYPL-discovery/discovery-general/tree/master/architecture/graffle) file
 2. Make a copy and rename to current date
-3. Make you edits and save
+3. Make your edits and save
 4. If you add a new component, go to it's properties -> Action -> Opens a URL, and enter a unique identifier (e.g. `sierra_bib_retriever`. This will be the key that will be added to the `components.json` later.
 5. Export as an svg to `./architecture/svg` directory
 6. Open svg file in text editor (this sucks that we have to do this, but omnigraffle exports embedded images as pdfs that don't work in the browser). Do the following find-and-replaces:
