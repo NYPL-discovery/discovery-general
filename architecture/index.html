@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Discovery Architecture Component Status</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <script src="js/jquery-3.1.1.slim.min.js" charset="utf-8"></script>
+  <script src="js/d3.v3.min.js" charset="utf-8"></script>
+  <link rel="shortcut icon" href="img/favicon.png">
+  <style type="text/css">
+  svg a circle {
+    stroke: #000000;
+    stroke-width: 1px;
+  }
+  svg a.planned circle { fill: #d33939; }
+  svg a.in-progress circle { fill: #ff9000; }
+  svg a.code-complete circle { fill: #f2cf21; }
+  svg a.in-production circle { fill: #7fce4a; }
+
+  .key {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .key span {
+    font-weight: bold;
+  }
+  .key span:after {
+    content: ' ';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid black;
+    margin: 0 5px;
+  }
+  span.planned { color: #d33939; }
+  span.in-progress { color: #ff9000; }
+  span.code-complete { color: #f2cf21; }
+  span.in-production { color: #7fce4a; }
+
+  span.planned:after { background: #d33939; }
+  span.in-progress:after { background: #ff9000; }
+  span.code-complete:after { background: #f2cf21; }
+  span.in-production:after { background: #7fce4a; }
+  </style>
+</head>
+<body>
+  <header></header>
+  <div class="container" id="contents">
+    <h1>Discovery Architecture Component Status</h1>
+    <p>Click each component for more details and links to code repositories. More details about each component <a href="https://docs.google.com/spreadsheets/d/1zOt2VhkMGLw4IQ7WOsC2oF9No4LCiQ5Cdd8tsDwkcKE/edit#gid=0">here</a></p>
+    <ul class="key">
+      <li>
+        <span class="planned"></span> Planned but not started
+      </li>
+      <li>
+        <span class="in-progress"></span> In progress
+      </li>
+      <li>
+        <span class="code-complete"></span> Code complete
+      </li>
+      <li>
+        <span class="in-production"></span> Deployed and running in production environment
+      </li>
+    </ul>
+    <hr>
+    <div id="architecture">
+    </div>
+    <div id="popup" class="arrow-box hidden">
+      <div id="popup-link">
+        <a href="" target="_blank"></a>
+      </div>
+      <div id="popup-contents">
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script src="js/diagram.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+{
+  "sierra_item_update_poller": {
+    "type": "ec2",
+    "status": "code-complete",
+    "desc": "Polls the SierraItemService every 10 minutes and publishes SierraItemUpdate to the SierraItemUpdate and SierraItemRequest Streams",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierraitemupdatepoller"}
+    ]
+  },
+  "sierra_bib_update_poller": {
+    "type": "ec2",
+    "status": "code-complete",
+    "desc": "Polls the SierraBibService every 10 minutes and publishes SierraBibUpdate to the SierraBibUpdate and SierraBibRequest Streams",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierrabibupdatepoller"}
+    ]
+  },
+  "sierra_item_request_stream": {
+    "type": "stream",
+    "status": "code-complete",
+    "desc": "Kinesis stream"
+  },
+  "sierra_bib_request_stream": {
+    "type": "stream",
+    "status": "code-complete",
+    "desc": "Kinesis stream"
+  },
+  "sierra_item_retriever": {
+    "type": "lambda",
+    "status": "in-progress",
+    "desc": "Reads SierraItemRequest from the SierraItemRequest stream, retrieves those SierraItem records from the SierraItemService, and publishes SierraItem to the SierraItemRetrieval Stream",
+    "links": [
+      {"label": "Github", "href": "javascript:alert('None yet')"}
+    ]
+  },
+  "sierra_bib_retriever": {
+    "type": "lambda",
+    "status": "in-progress",
+    "desc": "Reads SierraBibRequest from the SierraBibRequest stream, retrieves those SierraBib records from the SierraBibService, and publishes SierraBib to the SierraBibRetrieval Stream",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierra-bib-retriever"}
+    ]
+  },
+  "sierra_item_s3_reader": {
+    "type": "lambda",
+    "status": "planned",
+    "desc": "Reads SierraItem records saved in S3 and publishes to SierraItemPostRequest",
+    "links": [
+      {"label": "Github", "href": "javascript:alert('None yet')"}
+    ]
+  },
+  "sierra_bib_s3_reader": {
+    "type": "lambda",
+    "status": "planned",
+    "desc": "Reads SierraBib records saved in S3 and publishes to SierraBibPostRequest",
+    "links": [
+      {"label": "Github", "href": "javascript:alert('None yet')"}
+    ]
+  },
+  "sierra_item_post_request_stream": {
+    "type": "stream",
+    "status": "planned",
+    "desc": "Kinesis stream"
+  },
+  "sierra_bib_post_request_stream": {
+    "type": "stream",
+    "status": "planned",
+    "desc": "Kinesis stream"
+  },
+  "sierra_item_poster": {
+    "type": "lambda",
+    "status": "planned",
+    "desc": "Reads from the SierraItemPostRequest stream and posts SierraItem to the ItemService, S3, and/or other destinations",
+    "links": [
+      {"label": "Github", "href": "javascript:alert('None yet')"}
+    ]
+  },
+  "sierra_bib_poster": {
+    "type": "lambda",
+    "status": "planned",
+    "desc": "Reads from the SierraBibPostRequest stream and posts SierraBib to the BibService, S3, and/or other destinations",
+    "links": [
+      {"label": "Github", "href": "javascript:alert('None yet')"}
+    ]
+  },
+  "item_service": {
+    "type": "lambda",
+    "status": "in-production",
+    "desc": "Creates, reads, updates, and deletes Item records",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/itemservice"}
+    ]
+  },
+  "bib_service": {
+    "type": "lambda",
+    "status": "in-production",
+    "desc": "Creates, reads, updates, and deletes Bib records",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/bibservice"}
+    ]
+  },
+  "item_stream": {
+    "type": "stream",
+    "status": "in-production",
+    "desc": "Kinesis stream"
+  },
+  "bib_stream": {
+    "type": "stream",
+    "status": "in-production",
+    "desc": "Kinesis stream"
+  },
+  "discovery_store_poster": {
+    "type": "lambda",
+    "status": "in-progress",
+    "desc": "Reads Bib and Item streams, transforms them into Resource record, saves it a database, and publishes to Resource stream",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/pcdm-store-updater"}
+    ]
+  },
+  "doc_uri_stream": {
+    "type": "stream",
+    "status": "in-progress",
+    "desc": "Kinesis stream"
+  },
+  "discovery_queue_manager": {
+    "type": "lambda",
+    "status": "in-production",
+    "desc": "Reads document URI streams, batches them, publishes downstream",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-queue-manager"}
+    ]
+  },
+  "unique_doc_uri_stream": {
+    "type": "stream",
+    "status": "in-progress",
+    "desc": "Kinesis stream"
+  },
+  "discovery_index_poster": {
+    "type": "lambda",
+    "status": "in-progress",
+    "desc": "Reads Resource stream and posts to ElasticSearch",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-api-indexer"}
+    ]
+  },
+  "resource_search_service": {
+    "type": "lambda",
+    "status": "in-production",
+    "desc": "Reads ResourceSearchRecords",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-api"}
+    ]
+  }
+}

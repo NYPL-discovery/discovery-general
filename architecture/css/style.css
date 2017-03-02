@@ -1,0 +1,177 @@
+/* Style
+   ========================================================================== */
+
+body {
+  background-color: #fcfcfc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body,
+a,
+a:visited {
+  color: #111;
+}
+
+a:hover {
+  color: #90d332;
+}
+
+header {
+  width: 100%;
+  height: 5px;
+  background-color: #90d332;
+}
+
+header {
+  margin-bottom: 2em;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+body {
+  font-size: 1.8em;
+  /*min-width: 1200px;*/
+}
+
+ul {
+  margin-left: 2rem;
+}
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Override Skeleton width */
+.container {
+  /*max-width: 1100px;*/
+  max-width: 800px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Architecture
+   ========================================================================== */
+
+#architecture svg {
+  width: 100%;
+  height: auto;
+}
+
+#architecture svg {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 1450px) {
+  #architecture svg {
+    width: calc(100% + 300px);
+    margin-left: -150px;
+  }
+}
+
+@media (min-width: 1650px) {
+  #architecture svg {
+    width: calc(100% + 600px);
+    margin-left: -300px;
+  }
+}
+
+.badge circle {
+  fill: #f50000;
+  stroke-width: 3;
+  stroke: rgba(255, 255, 255, 0.5);
+}
+
+.badge text {
+  font-family: 'Open Sans';
+  font-size: 21px;
+  font-weight: 500;
+  text-anchor: middle;
+  fill: white;
+}
+
+/* Legend
+   ========================================================================== */
+
+.legend-block {
+  border-width: 1.9px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+.legend-block-external {
+  border-style: dashed;
+}
+
+.legend-badge {
+  background-color: #f50000;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+  padding: 4px;
+  color: white;
+}
+
+/* Colors
+   ========================================================================== */
+
+.finished-error path {
+  stroke: #f50000;
+  stroke-width: 3px;
+}
+.todo-color{
+  fill: #e86868;
+  background-color: #e86868;
+}
+.inprogress-color{
+  fill: #ffdd00;
+  background-color: #ffdd00;
+}
+
+.finished-color1 {
+  fill: white;
+  background-color: white;
+}
+
+.finished-color2 {
+  fill: #D9ECBF;
+  background-color: #D9ECBF;
+}
+
+.finished-color3 {
+  fill: #B3D97F;
+  background-color: #B3D97F;
+}
+
+.finished-color4 {
+  fill: #8DC63F;
+  background-color: #8DC63F;
+}
+
+.finished-color5 {
+  fill: #90d332;
+  background-color: #90d332;
+}
+
+.markdown-body .links a {
+  display: block;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.markdown-body .links a.finished-color {
+  background: #90d332;
+}
+.markdown-body .links a.inprogress-color {
+  background: #ffdd00;
+}
+.markdown-body .links a.todo-color {
+  background: #e86868;
+}
