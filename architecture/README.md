@@ -2,12 +2,12 @@
 
 You can view the current version/status here: https://nypl-discovery.github.io/discovery-general/architecture/
 
-To update status:
+**To update status:**
 
 1. Edit [components.json](https://github.com/NYPL-discovery/discovery-general/blob/master/architecture/components.json) - you can do this directly in github UI or clone and edit it locally.
 2. Possible statuses: `planned`, `in-progress`, `code-complete`, `in-production`
 
-To change the diagram (currently a crappy process):
+**To change the diagram (currently a crappy process):**
 
 1. Open the latest [graffle](https://github.com/NYPL-discovery/discovery-general/tree/master/architecture/graffle) file
 2. Make a copy and rename to current date
