@@ -1,4 +1,3 @@
-var DIAGRAM_DIR = 'svg/platform_diagram_2017-03-02/';
 var DIAGRAM = 'svg/platform_diagram_2017-03-02/platform_diagram_2017-03-02.svg';
 var COMPONENT_DATA = 'components.json';
 var currentPopupHref;
@@ -135,7 +134,7 @@ d3.json(COMPONENT_DATA, function (err, data) {
           currentPopupHref = href;
         });
       }
-      
+
     });
   });
 });
