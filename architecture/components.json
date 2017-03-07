@@ -132,7 +132,7 @@
   },
   "unique_doc_uri_stream": {
     "type": "stream",
-    "status": "in-progress",
+    "status": "code-complete",
     "desc": "Kinesis stream"
   },
   "discovery_index_poster": {
