@@ -69,7 +69,7 @@
   },
   "sierra_item_poster": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "code-complete",
     "desc": "Reads from the SierraItemPostRequest stream and posts SierraItem to the ItemService, S3, and/or other destinations",
     "links": [
       {"label": "Github", "href": "javascript:alert('None yet')"}
@@ -77,7 +77,7 @@
   },
   "sierra_bib_poster": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "code-complete",
     "desc": "Reads from the SierraBibPostRequest stream and posts SierraBib to the BibService, S3, and/or other destinations",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-bib-poster"}
@@ -85,7 +85,7 @@
   },
   "item_service": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Creates, reads, updates, and deletes Item records",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/itemservice"}
@@ -93,7 +93,7 @@
   },
   "bib_service": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Creates, reads, updates, and deletes Bib records",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/bibservice"}
