@@ -72,7 +72,7 @@
     "status": "code-complete",
     "desc": "Reads from the SierraItemPostRequest stream and posts SierraItem to the ItemService, S3, and/or other destinations",
     "links": [
-      {"label": "Github", "href": "javascript:alert('None yet')"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-bib-poster"}
     ]
   },
   "sierra_bib_poster": {
