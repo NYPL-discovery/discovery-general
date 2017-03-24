@@ -117,7 +117,7 @@
       {"label": "Github", "href": "https://github.com/NYPL-discovery/pcdm-store-updater"}
     ]
   },
-  "doc_uri_stream": {
+  "index_document_queue_stream": {
     "type": "stream",
     "status": "in-progress",
     "desc": "Kinesis stream"
@@ -130,7 +130,7 @@
       {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-queue-manager"}
     ]
   },
-  "unique_doc_uri_stream": {
+  "index_document_stream": {
     "type": "stream",
     "status": "code-complete",
     "desc": "Kinesis stream"
