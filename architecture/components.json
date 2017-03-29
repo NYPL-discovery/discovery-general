@@ -143,6 +143,11 @@
       {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-api-indexer"}
     ]
   },
+  "index_document_processed_stream": {
+    "type": "stream",
+    "status": "in-production",
+    "desc": "Kinesis stream"
+  },
   "resource_search_service": {
     "type": "lambda",
     "status": "in-production",
