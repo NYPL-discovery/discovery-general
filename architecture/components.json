@@ -43,7 +43,7 @@
   },
   "sierra_item_s3_reader": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "code-complete",
     "desc": "Reads SierraItem records saved in S3 and publishes to SierraItemPostRequest (Renamed bulk-export-reader)",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/bulk-export-reader"}
@@ -51,7 +51,7 @@
   },
   "sierra_bib_s3_reader": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "code-complete",
     "desc": "Reads SierraBib records saved in S3 and publishes to SierraBibPostRequest (Renamed bulk-export-reader)",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/bulk-export-reader"}
@@ -59,12 +59,12 @@
   },
   "sierra_item_post_request_stream": {
     "type": "stream",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "sierra_bib_post_request_stream": {
     "type": "stream",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "sierra_item_poster": {
