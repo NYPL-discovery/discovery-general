@@ -43,7 +43,7 @@
   },
   "sierra_item_s3_reader": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "code-complete",
     "desc": "Reads SierraItem records saved in S3 and publishes to SierraItemPostRequest (Renamed bulk-export-reader)",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/bulk-export-reader"}
@@ -51,7 +51,7 @@
   },
   "sierra_bib_s3_reader": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "code-complete",
     "desc": "Reads SierraBib records saved in S3 and publishes to SierraBibPostRequest (Renamed bulk-export-reader)",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/bulk-export-reader"}
@@ -59,12 +59,12 @@
   },
   "sierra_item_post_request_stream": {
     "type": "stream",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "sierra_bib_post_request_stream": {
     "type": "stream",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "sierra_item_poster": {
@@ -111,7 +111,7 @@
   },
   "discovery_store_poster": {
     "type": "lambda",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Reads Bib and Item streams, transforms them into Resource record, saves it a database, and publishes to Resource stream",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/pcdm-store-updater"}
@@ -119,7 +119,7 @@
   },
   "index_document_queue_stream": {
     "type": "stream",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "discovery_queue_manager": {
@@ -132,12 +132,12 @@
   },
   "index_document_stream": {
     "type": "stream",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "discovery_index_poster": {
     "type": "lambda",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Reads Resource stream and posts to ElasticSearch",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-api-indexer"}
