@@ -1,18 +1,18 @@
 {
   "sierra_item_update_poller": {
     "type": "ec2",
-    "status": "code-complete",
-    "desc": "Polls the SierraItemService every 10 minutes and publishes SierraItemUpdate to the SierraItemUpdate and SierraItemRequest Streams",
+    "status": "in-production",
+    "desc": "Polls the SierraItemService every 10 minutes and publishes SierraItemUpdate to the SierraItemUpdate and SierraItemRetrievalRequest Streams",
     "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierraitemupdatepoller"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierraupdatepoller"}
     ]
   },
   "sierra_bib_update_poller": {
     "type": "ec2",
-    "status": "code-complete",
-    "desc": "Polls the SierraBibService every 10 minutes and publishes SierraBibUpdate to the SierraBibUpdate and SierraBibRequest Streams",
+    "status": "in-production",
+    "desc": "Polls the SierraBibService every 10 minutes and publishes SierraBibUpdate to the SierraBibUpdate and SierraBibRetrievalRequest Streams",
     "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierrabibupdatepoller"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierraupdatepoller"}
     ]
   },
   "sierra_item_request_stream": {
