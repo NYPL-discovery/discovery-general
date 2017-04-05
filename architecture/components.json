@@ -17,12 +17,12 @@
   },
   "sierra_item_request_stream": {
     "type": "stream",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "sierra_bib_request_stream": {
     "type": "stream",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "sierra_item_retriever": {
