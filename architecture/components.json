@@ -27,7 +27,7 @@
   },
   "sierra_item_retriever": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Reads SierraItemRequest from the SierraItemRequest stream, retrieves those SierraItem records from the SierraItemService, and publishes SierraItem to the SierraItemRetrieval Stream",
     "links": [
       {"label": "Github", "href": "javascript:alert('None yet')"}
@@ -35,7 +35,7 @@
   },
   "sierra_bib_retriever": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Reads SierraBibRequest from the SierraBibRequest stream, retrieves those SierraBib records from the SierraBibService, and publishes SierraBib to the SierraBibRetrieval Stream",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/sierra-bib-retriever"}
