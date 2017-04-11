@@ -69,10 +69,10 @@
   },
   "sierra_item_poster": {
     "type": "lambda",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Reads from the SierraItemPostRequest stream and posts SierraItem to the ItemService, S3, and/or other destinations",
     "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-bib-poster"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-poster"}
     ]
   },
   "sierra_bib_poster": {
@@ -80,7 +80,7 @@
     "status": "in-production",
     "desc": "Reads from the SierraBibPostRequest stream and posts SierraBib to the BibService, S3, and/or other destinations",
     "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-bib-poster"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-poster"}
     ]
   },
   "item_service": {
