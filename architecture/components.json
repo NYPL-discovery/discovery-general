@@ -1,33 +1,33 @@
 {
   "sierra_item_update_poller": {
     "type": "ec2",
-    "status": "code-complete",
-    "desc": "Polls the SierraItemService every 10 minutes and publishes SierraItemUpdate to the SierraItemUpdate and SierraItemRequest Streams",
+    "status": "in-production",
+    "desc": "Polls the SierraItemService every 10 minutes and publishes SierraItemUpdate to the SierraItemUpdate and SierraItemRetrievalRequest Streams",
     "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierraitemupdatepoller"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierraupdatepoller"}
     ]
   },
   "sierra_bib_update_poller": {
     "type": "ec2",
-    "status": "code-complete",
-    "desc": "Polls the SierraBibService every 10 minutes and publishes SierraBibUpdate to the SierraBibUpdate and SierraBibRequest Streams",
+    "status": "in-production",
+    "desc": "Polls the SierraBibService every 10 minutes and publishes SierraBibUpdate to the SierraBibUpdate and SierraBibRetrievalRequest Streams",
     "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierrabibupdatepoller"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/sierraupdatepoller"}
     ]
   },
   "sierra_item_request_stream": {
     "type": "stream",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "sierra_bib_request_stream": {
     "type": "stream",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Kinesis stream"
   },
   "sierra_item_retriever": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Reads SierraItemRequest from the SierraItemRequest stream, retrieves those SierraItem records from the SierraItemService, and publishes SierraItem to the SierraItemRetrieval Stream",
     "links": [
       {"label": "Github", "href": "javascript:alert('None yet')"}
@@ -35,7 +35,7 @@
   },
   "sierra_bib_retriever": {
     "type": "lambda",
-    "status": "in-progress",
+    "status": "in-production",
     "desc": "Reads SierraBibRequest from the SierraBibRequest stream, retrieves those SierraBib records from the SierraBibService, and publishes SierraBib to the SierraBibRetrieval Stream",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/sierra-bib-retriever"}
@@ -69,10 +69,10 @@
   },
   "sierra_item_poster": {
     "type": "lambda",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Reads from the SierraItemPostRequest stream and posts SierraItem to the ItemService, S3, and/or other destinations",
     "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-bib-poster"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-poster"}
     ]
   },
   "sierra_bib_poster": {
@@ -80,7 +80,7 @@
     "status": "in-production",
     "desc": "Reads from the SierraBibPostRequest stream and posts SierraBib to the BibService, S3, and/or other destinations",
     "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-bib-poster"}
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-poster"}
     ]
   },
   "item_service": {
