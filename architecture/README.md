@@ -14,11 +14,10 @@ You can view the current version/status here: https://nypl-discovery.github.io/d
 3. Make your edits and save
 4. If you add a new component, go to it's properties -> Action -> Opens a URL, and enter a unique identifier (e.g. `sierra_bib_retriever`. This will be the key that will be added to the `components.json` later.
 5. Export as an svg to `./architecture/svg` directory
-6. Open svg file in text editor (this sucks that we have to do this, but omnigraffle exports embedded images as pdfs that don't work in the browser). Do the following find-and-replaces:
-   - `image1.tiff` -> `sierra.png`
-   - `image2.pdf` -> `ec2.png`
-   - `image3.pdf` -> `stream.png`
-   - `image4.pdf` -> `lambda.png`
+6. Run the svg fixer script to correct some references (see `fix-svgs.sh` for details):
+```
+./fix-svgs.sh
+```
 7. Edit [components.json](https://github.com/NYPL-discovery/discovery-general/blob/master/architecture/components.json) as needed. You can add a new key for a new component using the identifier from step 4.
 8. Update the `DIAGRAM` variable in [js/diagram.js](https://github.com/NYPL-discovery/discovery-general/blob/master/architecture/js/diagram.js) with the new svg.
 9. Push your changes to master
