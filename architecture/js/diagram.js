@@ -1,4 +1,4 @@
-var DIAGRAM = 'svg/platform_diagram_2017-03-29/platform_diagram_2017-03-29.svg';
+var DIAGRAM = 'svg/platform_diagram_2017-04-18/platform_diagram_2017-04-18.svg';
 var COMPONENT_DATA = 'components.json';
 var currentPopupHref;
 
