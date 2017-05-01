@@ -43,7 +43,7 @@
   },
   "bulk_export_reader": {
     "type": "lambda",
-    "status": "code-complete",
+    "status": "in-production",
     "desc": "Reads SierraItem & SierraBib records saved in S3 and publishes to SierraItemPostRequest and SierraBibPostRequest respectively (Renamed bulk-export-reader)",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/bulk-export-reader"}
