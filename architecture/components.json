@@ -41,18 +41,10 @@
       {"label": "Github", "href": "https://github.com/NYPL-discovery/sierra-bib-retriever"}
     ]
   },
-  "sierra_item_s3_reader": {
+  "bulk_export_reader": {
     "type": "lambda",
-    "status": "code-complete",
-    "desc": "Reads SierraItem records saved in S3 and publishes to SierraItemPostRequest (Renamed bulk-export-reader)",
-    "links": [
-      {"label": "Github", "href": "https://github.com/NYPL-discovery/bulk-export-reader"}
-    ]
-  },
-  "sierra_bib_s3_reader": {
-    "type": "lambda",
-    "status": "code-complete",
-    "desc": "Reads SierraBib records saved in S3 and publishes to SierraBibPostRequest (Renamed bulk-export-reader)",
+    "status": "in-production",
+    "desc": "Reads SierraItem & SierraBib records saved in S3 and publishes to SierraItemPostRequest and SierraBibPostRequest respectively (Renamed bulk-export-reader)",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/bulk-export-reader"}
     ]
@@ -151,9 +143,22 @@
   "resource_search_service": {
     "type": "lambda",
     "status": "in-production",
-    "desc": "Reads ResourceSearchRecords",
+    "desc": "JSON-LD api providing search & retrieval of resource data via ES",
     "links": [
       {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-api"}
+    ]
+  },
+  "api_gateway": {
+    "type": "api_gateway",
+    "status": "in-production",
+    "desc": "Joins various microservices into a single cohesive api with central authentication & caching"
+  },
+  "discovery_ui": {
+    "type": "stream",
+    "status": "in-production",
+    "desc": "Front-end app for searching, discovering, and placing a hold on research items at NYPL.",
+    "links": [
+      {"label": "Github", "href": "https://github.com/NYPL-discovery/discovery-front-end"}
     ]
   }
 }
