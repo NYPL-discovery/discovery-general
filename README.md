@@ -1,3 +1,3 @@
 # discovery-general
 
-placeholder repo for general discovery work
+placeholder repo for general discovery work!
